@@ -2,7 +2,7 @@ FROM debian:buster
 #Utility
 RUN apt-get update; \
     apt-get install -y nginx; \
-    apt-get install -y wget debconf debconf-utils lsb-release gnupg vim
+    apt-get install -y wget debconf debconf-utils lsb-release gnupg vim curl
 # Install MysQl
 
 

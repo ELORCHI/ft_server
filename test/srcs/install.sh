@@ -18,8 +18,10 @@ mysql -u root -e "CREATE USER 'elorchi'@'localhost' IDENTIFIED BY 'elorchi';"
 mysql -u root -e "CREATE DATABASE wp_DB;"
 mysql -u root -e "GRANT ALL PRIVILEGES ON wp_DB.* TO 'elorchi'@'localhost';"
 mysql -u root -e "FLUSH PRIVILEGES;"
-mysql -u root < localhost.sql
+mysql -u root < /localhost.sql
 
+mv /nginx-selfsigned.key /etc/ssl/private/
+mv /nginx-selfsigned.crt /etc/ssl/certs/
 cd /tmp
 curl -LO https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz

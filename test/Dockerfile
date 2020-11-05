@@ -19,5 +19,5 @@ RUN apt-get update ;\
 
 COPY srcs .
 EXPOSE 80 443
-RUN bash install.sh ;
-RUN bash start_service.sh
+RUN sh install.sh ;
+CMD bash start_service.sh

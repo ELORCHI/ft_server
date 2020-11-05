@@ -62,7 +62,12 @@ server {
 		deny all;
 	}
 }
-
+server {
+    listen 80;
+    listen [::]:80;
+    server_name localhost;
+    return 301 https://localhost$request_uri;
+}
 
 # Virtual Host configuration for example.com
 #

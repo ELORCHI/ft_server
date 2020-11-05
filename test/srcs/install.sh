@@ -9,10 +9,7 @@ mv /config.inc.php /var/www/html/phpmyadmin/
 mv /default /etc/nginx/sites-available/default
 chmod 660 /var/www/html/phpmyadmin/config.inc.php
 chown -R www-data:www-data /var/www/html/phpmyadmin
-
-service nginx reload
-service mysql reload
-service php7.3-fpm reload
+service mysql start
 
 mysql -u root -e "CREATE USER 'elorchi'@'localhost' IDENTIFIED BY 'elorchi';"
 mysql -u root -e "CREATE DATABASE wp_DB;"

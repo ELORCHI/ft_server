@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', 'elorchi' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '0fvw:w+i*H9:D@-q0:^ypSlb{ghE@|rzE}+<g/G)z(-G/h72-Kdl~B+Wx ++4Eb+');
-define('SECURE_AUTH_KEY',  'y||r<zBN-fHxa %F*JIkf{8Z+K.#TG-VZWF|&$q.4zx#C~Trarzo!f.4 <^^_3C+');
-define('LOGGED_IN_KEY',    '/dw%p~nU_fsG4~dVVJP@WN*qS>kxB]9/1<IG(%W[ZSEW`n6>*H}%!?X=D,Xs^O!s');
-define('NONCE_KEY',        'jwPj[6hV!y=:M7m~{~6qL1`:^n8iW<9y?5;y]5i!__RGdoM6zCb|T PGtpLt=bFh');
-define('AUTH_SALT',        '5)`>=.}U^O3/+f1]67Hq%.R^0y@IF+4}m{mL>LqN-[->k1vBfE>Wf=jHlNVYjps>');
-define('SECURE_AUTH_SALT', 'f%YO)/yP0krCU@Ei~<d#lK:<hw/197;5HSDxN}7@L!zJz:pw%JA;:l#FfMkB`;b]');
-define('LOGGED_IN_SALT',   'XH<SRSG4V!{XoJ.+~qH1Q-t,VD:OmrHH2Y(jksQ`-so6n$|S~/SLBK-(~NVmFkLj');
-define('NONCE_SALT',       'IJrP{*Zj`I2%YzoZSk-KD#0pv+;zE -0,H#r@;7!t+CzR/q^=7+)_Vy&,y,Q7>iW');
+define( 'AUTH_KEY',         'jDH_@D-9F&_@*WaHORM}Z 9gmz2J-ljMpPGBa(IS z~iE`)7js,}is5%a5q81SF>' );
+define( 'SECURE_AUTH_KEY',  'Rom9d{gsJrMYuh1q%Q>g|,j]:Ug]Vopna0~!2i~iDI_5,^)oO^8rvzo>Y:3|XtV ' );
+define( 'LOGGED_IN_KEY',    'K47U5c,]&H`9uyOLXRPT7GsMkeugcInki*,a{DyDm:B@ ?#SHX)@4#A<pP/-K&bV' );
+define( 'NONCE_KEY',        'OeG3+^7ErsR+k*O(18b%D0B<~R?~uOyY?qtIk7r4@T>&?/X<bIjwMucF*Y}Ko~h=' );
+define( 'AUTH_SALT',        'q)XOoyp/^oeM7d8#wZDGd.e-= Jp=3.#$u.!Ck%6{U>`*z>3[uc(dofP<Y mxlNI' );
+define( 'SECURE_AUTH_SALT', 'PiwHrCNU6=lCbh I8-Nm:_ K{`/2+e[7mya-d13`00PM_n/7J#e&wVc-QmeVsr;O' );
+define( 'LOGGED_IN_SALT',   '=JDvl@hy0+Rr1$Qio,U86*`zVts~6aS}c&,jtSte%>p{%Ez?}fWc.&#.u$]NiFEL' );
+define( 'NONCE_SALT',       'k,rS(@&l-JkghlGDtXB->=R&Q$QB=Z0qSXC(s`7Jc[?A3csRCS?o}=r[r[4mx$JX' );
 /**#@-*/
 
 /**
@@ -85,5 +85,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
-/** Sets up WordPress vars and included files. */
+/** Sets up WordPress vars and included files.  */
 require_once ABSPATH . 'wp-settings.php';
